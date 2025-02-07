@@ -7,3 +7,108 @@ packages:
   gitUrl: https://github.com/amkuamrk
   gitUsername: amkuamrk
   gitBranch: main
+- name: WmSalesforceProvider
+services:
+- serviceName: project.amkutestgit.integrations:AmkuTestGit_p_flow
+  packages:
+  - name: AmkuTestGITProject
+    version: "1.0"
+  - name: WmSalesforceProvider
+    version: 10.7.0.0.53
+- serviceName: project.amkutestgit.WmSalesforceProvider.com_softwareag_cloudstreams_salesforce_v53.operations.actions:cust2
+  packages:
+  - name: AmkuTestGITProject
+    version: "1.0"
+  - name: WmSalesforceProvider
+    version: 10.7.0.0.53
+configurationVariables:
+  ? cloudstreamsconnection.project..amkutestgit..WmSalesforceProvider..com_softwareag_cloudstreams_salesforce_v53..connections:amku_soap_git_test.cn.sockBuffSize
+  : "8192"
+  ? cloudstreamsconnection.project..amkutestgit..WmSalesforceProvider..com_softwareag_cloudstreams_salesforce_v53..connections:amku_soap_git_test.cn.retryIfRequestSentOk
+  : "true"
+  ? cloudstreamsconnection.project..amkutestgit..WmSalesforceProvider..com_softwareag_cloudstreams_salesforce_v53..connections:amku_soap_git_test.poolIncrementSize
+  : "1"
+  ? cloudstreamsconnection.project..amkutestgit..WmSalesforceProvider..com_softwareag_cloudstreams_salesforce_v53..connections:amku_soap_git_test.startupRetryCount
+  : "0"
+  ? cloudstreamsconnection.project..amkutestgit..WmSalesforceProvider..com_softwareag_cloudstreams_salesforce_v53..connections:amku_soap_git_test.cn.reuseAddr
+  : "false"
+  ? cloudstreamsconnection.project..amkutestgit..WmSalesforceProvider..com_softwareag_cloudstreams_salesforce_v53..connections:amku_soap_git_test.rh.requestHeaderNames
+  : "Content-Type,SOAPAction"
+  ? iscloudstreamsconnectorservice.project..amkutestgit..WmSalesforceProvider..com_softwareag_cloudstreams_salesforce_v53..operations..actions:cust2.connectionAlias
+  : project.amkutestgit.WmSalesforceProvider.com_softwareag_cloudstreams_salesforce_v53.connections:amku_soap_git_test
+  ? cloudstreamsconnection.project..amkutestgit..WmSalesforceProvider..com_softwareag_cloudstreams_salesforce_v53..connections:amku_soap_git_test.cn.socketLinger
+  : "-1"
+  ? cloudstreamsconnection.project..amkutestgit..WmSalesforceProvider..com_softwareag_cloudstreams_salesforce_v53..connections:amku_soap_git_test.cn.readTimeout
+  : "180000"
+  ? cloudstreamsconnection.project..amkutestgit..WmSalesforceProvider..com_softwareag_cloudstreams_salesforce_v53..connections:amku_soap_git_test.pr.allowCircularRedirects
+  : "true"
+  ? cloudstreamsconnection.project..amkutestgit..WmSalesforceProvider..com_softwareag_cloudstreams_salesforce_v53..connections:amku_soap_git_test.pr.protocolVersion
+  : HTTP/1.1
+  ? cloudstreamsconnection.project..amkutestgit..WmSalesforceProvider..com_softwareag_cloudstreams_salesforce_v53..connections:amku_soap_git_test.maximumPoolSize
+  : "10"
+  ? cloudstreamsconnection.project..amkutestgit..WmSalesforceProvider..com_softwareag_cloudstreams_salesforce_v53..connections:amku_soap_git_test.cn.providerUrl
+  : https://login.salesforce.com/services/Soap/u/53.0
+  ? cloudstreamsconnection.project..amkutestgit..WmSalesforceProvider..com_softwareag_cloudstreams_salesforce_v53..connections:amku_soap_git_test.pr.useExpectCont
+  : "false"
+  ? cloudstreamsconnection.project..amkutestgit..WmSalesforceProvider..com_softwareag_cloudstreams_salesforce_v53..connections:amku_soap_git_test.cn.socketStaleCheck
+  : "true"
+  ? cloudstreamsconnection.project..amkutestgit..WmSalesforceProvider..com_softwareag_cloudstreams_salesforce_v53..connections:amku_soap_git_test.pr.userAgent
+  : Cloudstreams
+  ? cloudstreamsconnection.project..amkutestgit..WmSalesforceProvider..com_softwareag_cloudstreams_salesforce_v53..connections:amku_soap_git_test.cr.preemptiveAuthEnabled
+  : "false"
+  ? cloudstreamsconnection.project..amkutestgit..WmSalesforceProvider..com_softwareag_cloudstreams_salesforce_v53..connections:amku_soap_git_test.connectionEnabled
+  : "true"
+  ? cloudstreamsconnection.project..amkutestgit..WmSalesforceProvider..com_softwareag_cloudstreams_salesforce_v53..connections:amku_soap_git_test.rh.requestHeaderValues
+  : "text/xml,login"
+  ? cloudstreamsconnection.project..amkutestgit..WmSalesforceProvider..com_softwareag_cloudstreams_salesforce_v53..connections:amku_soap_git_test.cn.tcpNoDelay
+  : "false"
+  ? cloudstreamsconnection.project..amkutestgit..WmSalesforceProvider..com_softwareag_cloudstreams_salesforce_v53..connections:amku_soap_git_test.pr.useChunking
+  : "false"
+  ? cloudstreamsconnection.project..amkutestgit..WmSalesforceProvider..com_softwareag_cloudstreams_salesforce_v53..connections:amku_soap_git_test.timeoutType
+  : fixed
+  ? cloudstreamsconnection.project..amkutestgit..WmSalesforceProvider..com_softwareag_cloudstreams_salesforce_v53..connections:amku_soap_git_test.cn.enableSNI
+  : "true"
+  ? cloudstreamsconnection.project..amkutestgit..WmSalesforceProvider..com_softwareag_cloudstreams_salesforce_v53..connections:amku_soap_git_test.pr.followServerRedirects
+  : "true"
+  ? cloudstreamsconnection.project..amkutestgit..WmSalesforceProvider..com_softwareag_cloudstreams_salesforce_v53..connections:amku_soap_git_test.cn.connectTimeout
+  : "180000"
+  ? cloudstreamsconnection.project..amkutestgit..WmSalesforceProvider..com_softwareag_cloudstreams_salesforce_v53..connections:amku_soap_git_test.cn.keepAliveInterval
+  : "300000"
+  ? cloudstreamsconnection.project..amkutestgit..WmSalesforceProvider..com_softwareag_cloudstreams_salesforce_v53..connections:amku_soap_git_test.sessionExpiry
+  : "14"
+  ? cloudstreamsconnection.project..amkutestgit..WmSalesforceProvider..com_softwareag_cloudstreams_salesforce_v53..connections:amku_soap_git_test.cn.validateAfterInactivity
+  : "1000"
+  ? cloudstreamsconnection.project..amkutestgit..WmSalesforceProvider..com_softwareag_cloudstreams_salesforce_v53..connections:amku_soap_git_test.minimumPoolSize
+  : "1"
+  ? cloudstreamsconnection.project..amkutestgit..WmSalesforceProvider..com_softwareag_cloudstreams_salesforce_v53..connections:amku_soap_git_test.cn.idleTimeout
+  : "-1"
+  ? cloudstreamsconnection.project..amkutestgit..WmSalesforceProvider..com_softwareag_cloudstreams_salesforce_v53..connections:amku_soap_git_test.pr.httpContentCharSet
+  : ISO-8859-1
+  ? cloudstreamsconnection.project..amkutestgit..WmSalesforceProvider..com_softwareag_cloudstreams_salesforce_v53..connections:amku_soap_git_test.poolable
+  : "true"
+  ? cloudstreamsconnection.project..amkutestgit..WmSalesforceProvider..com_softwareag_cloudstreams_salesforce_v53..connections:amku_soap_git_test.cr.password
+  : "{AES}t5yNEwb/+B95EGzFHslLnSCUEQ12gapTF4VocEEus22idbppFmCrIAENpqs8Xe43"
+  ? cloudstreamsconnection.project..amkutestgit..WmSalesforceProvider..com_softwareag_cloudstreams_salesforce_v53..connections:amku_soap_git_test.cn.retryCount
+  : "3"
+  ? cloudstreamsconnection.project..amkutestgit..WmSalesforceProvider..com_softwareag_cloudstreams_salesforce_v53..connections:amku_soap_git_test.cr.authSchemeType
+  : none
+  ? cloudstreamsconnection.project..amkutestgit..WmSalesforceProvider..com_softwareag_cloudstreams_salesforce_v53..connections:amku_soap_git_test.startupBackoffSecs
+  : "10"
+  ? iscloudstreamsconnectorservice.project..amkutestgit..WmSalesforceProvider..com_softwareag_cloudstreams_salesforce_v53..operations..actions:createAmku123_git_p.virtualServiceName
+  : WmCloudStreams.SoapVS
+  ? cloudstreamsconnection.project..amkutestgit..WmSalesforceProvider..com_softwareag_cloudstreams_salesforce_v53..connections:amku_soap_git_test.expireTimeout
+  : "1000"
+  ? cloudstreamsconnection.project..amkutestgit..WmSalesforceProvider..com_softwareag_cloudstreams_salesforce_v53..connections:amku_soap_git_test.cn.hostnameVerifier
+  : org.apache.http.conn.ssl.DefaultHostnameVerifier
+  ? cloudstreamsconnection.project..amkutestgit..WmSalesforceProvider..com_softwareag_cloudstreams_salesforce_v53..connections:amku_soap_git_test.pr.serverRedirectMax
+  : "5"
+  ? cloudstreamsconnection.project..amkutestgit..WmSalesforceProvider..com_softwareag_cloudstreams_salesforce_v53..connections:amku_soap_git_test.cr.username
+  : amkuecom@gmail.com
+  ? cloudstreamsconnection.project..amkutestgit..WmSalesforceProvider..com_softwareag_cloudstreams_salesforce_v53..connections:amku_soap_git_test.blockTimeout
+  : "1000"
+  ? iscloudstreamsconnectorservice.project..amkutestgit..WmSalesforceProvider..com_softwareag_cloudstreams_salesforce_v53..operations..actions:cust2.virtualServiceName
+  : WmCloudStreams.SoapVS
+  ? cloudstreamsconnection.project..amkutestgit..WmSalesforceProvider..com_softwareag_cloudstreams_salesforce_v53..connections:amku_soap_git_test.cn.enableCompression
+  : "false"
+  ? iscloudstreamsconnectorservice.project..amkutestgit..WmSalesforceProvider..com_softwareag_cloudstreams_salesforce_v53..operations..actions:createAmku123_git_p.connectionAlias
+  : project.amkutestgit.WmSalesforceProvider.com_softwareag_cloudstreams_salesforce_v53.connections:amku_soap_git_test
